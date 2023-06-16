@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trang web của tôi</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <!-- Thanh điều hướng -->
+  <div class="navbar">
+    <a  href="./BT1.html">BÀI 1</a>
+    <a  href="./BT2.html">BÀI 2</a>
+    <a  href="./BT3.html">BÀI 3</a>
+    <a class="active" href="./BT4.html">BÀI 4</a>
+  </div>
+  <h1>Tính hóa đơn khách hàng</h1>
+  <div class="input-group">
+    <label for="customer-type">Chọn loại khách hàng:</label>
+    <select id="customer-type" onchange="handleChangeCustomerType()">
+      <option value="nhadan">Nhà dân</option>
+      <option value="doanhnghiep">Doanh nghiệp</option>
+    </select>
+  </div>
+  <div class="input-group">
+    <label for="customer-code">Mã khách hàng:</label>
+    <input type="text" id="customer-code">
+  </div>
+  <div class="input-group">
+    <label for="connections">Số kết nối:</label>
+    <input type="number" id="connections">
+  </div>
+  <div class="input-group">
+    <label for="premium-channels">Số kênh cao cấp:</label>
+    <input type="number" id="premium-channels">
+  </div>
+  <div class="input-group">
+    <button onclick="calculateBill()">Tính hóa đơn</button>
+  </div>
+  <div id="result" class="result"></div>
+
+  <div id="result"></div>
+
+<script src="./js/index.js"></script>
+</body>
+</html>

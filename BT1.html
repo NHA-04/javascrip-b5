@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trang web của tôi</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <!-- Thanh điều hướng -->
+  <div class="navbar">
+    <a class="active" href="./BT1.html">BÀI 1</a>
+    <a href="./BT2.html">BÀI 2</a>
+    <a href="./BT3.html">BÀI 3</a>
+    <a href="./BT4.html">BÀI 4</a>
+  </div>
+  <form id="score-form">
+    <h2> Kỳ thi tuyển</h2>
+    <label for="score-hoi-dong">Điểm chuẩn của hội đồng:</label>
+    <input type="number" id="score-hoi-dong" step="0.1" required>
+
+    <label for="score-mon-1">Điểm môn thứ nhất:</label>
+    <input type="number" id="score-mon-1" step="0.1" required>
+
+    <label for="score-mon-2">Điểm môn thứ hai:</label>
+    <input type="number" id="score-mon-2" step="0.1" required>
+
+    <label for="score-mon-3">Điểm môn thứ ba:</label>
+    <input type="number" id="score-mon-3" step="0.1" required>
+
+    <label for="khu-vuc">Khu vực ưu tiên:</label>
+    <select id="khu-vuc">
+        <option value="">Không có</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select>
+
+    <label for="doi-tuong">Đối tượng ưu tiên:</label>
+    <select id="doi-tuong">
+        <option value="0">Không thuộc</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <button type="submit">Kiểm tra</button>
+</form>
+<div id="score-result"></div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
